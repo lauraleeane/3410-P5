@@ -452,14 +452,14 @@ int test12() {
 		fourthblock[i]=i;
 		fifthblock[i]=i;
         #ifdef PRINT_DEBUG
-    printf("%i %i %i %i %i %i\n", i firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
+    printf("%i %i %i %i %i %i\n", i,firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
 #endif
 	}
     i=0;
     for(i=0;i<8;i++){
 
         #ifdef PRINT_DEBUG
-    printf("%i %i %i %i %i %i\n", i firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
+    printf("%i %i %i %i %i %i\n", i,firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
 #endif
     }
 
@@ -468,7 +468,7 @@ int test12() {
     for(i=0;i<8;i++){
 
         #ifdef PRINT_DEBUG
-    printf("%i %i %i %i %i %i\n", i firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
+    printf("%i %i %i %i %i %i\n", i,firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
 #endif
     }
 
