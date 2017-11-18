@@ -374,10 +374,10 @@ int test10() {
 	hl_init(heap,HEAP_SIZE);
 
 	int* block=hl_alloc(heap,24);
-	int original[24];
+	//int original[24];
 	for(int i=0;i<24;i++){
 		block[i]=rand() % 100 +1;
-		original[i]=block[i];
+		//original[i]=block[i];
 	}
 
 	int* newblock = hl_resize(heap,block,8);
