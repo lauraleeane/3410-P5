@@ -461,9 +461,10 @@ int test12() {
 		if(firstblock[i]!=i || secondblock[i]!=i || thirdblock[i]!=i || fourthblock[i]!=i || fifthblock[i]!=i){
 
             #ifdef PRINT_DEBUG
-    printf("%i \n", i);
-#endif
-    return FAILURE;
+                printf("%i %i %i %i %i\n", firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
+            #endif
+
+            return FAILURE;
 		}
 	}
 
