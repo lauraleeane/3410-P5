@@ -451,6 +451,9 @@ int test12() {
 		thirdblock[i]=i;
 		fourthblock[i]=i;
 		fifthblock[i]=i;
+        #ifdef PRINT_DEBUG
+    printf("%i %i %i %i %i\n", firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
+#endif
 	}
 
     for(i=0;i<8;i++){
