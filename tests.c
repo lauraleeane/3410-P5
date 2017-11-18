@@ -443,7 +443,7 @@ int test12() {
 	int* thirdblock=hl_alloc(heap,8);
 	int* fourthblock=hl_alloc(heap,8);
 	int* fifthblock=hl_alloc(heap,8);
-	for(int i=0;i<8;i++){
+	for(int i=0;i<8;i=i+1){
 		firstblock[i]=1;
 		secondblock[i]=2;
 		thirdblock[i]=3;
