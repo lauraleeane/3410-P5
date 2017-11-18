@@ -471,8 +471,7 @@ int test12() {
 #endif
     }
 
-	i=0;
-	for(i=0;i<8;i++){
+	for(int i=0;i<8;i++){
 		if(firstblock[i]!=1 || secondblock[i]!=2 || thirdblock[i]!=3 || fourthblock[i]!=4 || fifthblock[i]!=5){
 
             return FAILURE;
