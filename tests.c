@@ -550,14 +550,7 @@ int test15() {
 
     char heap[HEAP_SIZE];
 
-    int i;
-    for(i=0;i<7;i++){
-    hl_init(heap+i,HEAP_SIZE);
-
-
-   #ifdef PRINT_DEBUG
-    printf("%lu heap pointer\n", (uintptr_t)heap);
-#endif
+    hl_init(heap+1,HEAP_SIZE);
 
     int* block=hl_alloc(heap,8);
     bool aligned = ((uintptr_t)block%8==0);
@@ -565,7 +558,7 @@ int test15() {
     if(!aligned){
         return FAILURE;
     }
-}
+
 
     return SUCCESS;
 }
