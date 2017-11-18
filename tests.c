@@ -551,7 +551,7 @@ int test15() {
     char heap[HEAP_SIZE];
     hl_init(heap,HEAP_SIZE);
 
-    header=header+1;
+    heap_header_t *header=(heap_header_t *)heap;
 
    /*#ifdef PRINT_DEBUG
     printf("%lu heap pointer\n", (uintptr_t)&heap);
