@@ -500,7 +500,7 @@ int test13() {
 	int* newblock=hl_alloc(heap,16);
 
 	if(newblock==NULL){
-		return FAILURE:
+		return FAILURE;
 	}
 
 
@@ -526,7 +526,7 @@ int test14() {
 
     int* newblock=hl_resize(heap,blocknull,8);
 
-    bool aligned=((uintptr_t)block%8==0);
+    bool aligned=((uintptr_t)newblock%8==0);
 
     if(aligned){
         return SUCCESS;
@@ -547,7 +547,7 @@ int test14() {
  */
 int test15() {
 
-    char heap(HEAP_SIZE);
+    char heap[HEAP_SIZE];
     hl_init(heap,HEAP_SIZE);
 
     heap=heap+1;
