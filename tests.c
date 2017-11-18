@@ -454,7 +454,6 @@ int test12() {
 #endif
 	}
 
-printf("%i %i %i %i %i\n",firstblock,secondblock,thirdblock,fourthblock,fifthblock);
     for(int j=0;j<8;j++){
 
         #ifdef PRINT_DEBUG
