@@ -550,7 +550,11 @@ int test15() {
     char heap[HEAP_SIZE];
     hl_init(heap,HEAP_SIZE);
 
-    heap=heap+1;
+   // heap=heap+1;
+
+#ifdef PRINT_DEBUG
+    printf("%c heap\n", heap);
+#endif
 
     int* block=hl_alloc(heap,8);
     bool aligned = ((uintptr_t)block%8==0);
