@@ -456,7 +456,7 @@ int test12() {
 	}
 
     for(int k=0;k<8;k++){
-        firstblokc[k]=k;
+        firstblock[k]=k;
     }
 
     for(int j=0;j<8;j++){
