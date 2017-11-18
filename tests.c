@@ -452,10 +452,9 @@ int test12() {
         #ifdef PRINT_DEBUG
     printf("%i %i %i %i %i\n",firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
 #endif
-
-    if (i > 0) { printf("%i %i %i %i %i\n",firstblock[i-1],secondblock[i-1],thirdblock[i-1],fourthblock[i-1],fifthblock[i-1]); }
 	}
 
+printf("%i %i %i %i %i\n",firstblock,secondblock,thirdblock,fourthblock,fifthblock);
     for(int j=0;j<8;j++){
 
         #ifdef PRINT_DEBUG
