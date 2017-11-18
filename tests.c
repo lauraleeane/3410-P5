@@ -548,7 +548,7 @@ int test14() {
  */
 int test15() {
 
-    char heap[HEAP_SIZE];
+    char heap[HEAP_SIZE*2];
 
     hl_init(heap+1,HEAP_SIZE-1);
 
