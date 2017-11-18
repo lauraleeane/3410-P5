@@ -379,7 +379,6 @@ int test10() {
 		block[i]=rand() % 100 +1;
 		//original[i]=block[i];
 	}
-
 	int* newblock = hl_resize(heap,block,8);
 
 	for(int i=0;i<8;i++){
