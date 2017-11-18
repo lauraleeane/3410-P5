@@ -552,8 +552,8 @@ int test15() {
 
     hl_init(heap+1,HEAP_SIZE-1);
 
-    int* block=hl_alloc(heap+1,8);
-    bool aligned1 = ((uintptr_t)block%8==0);
+    int* block1=hl_alloc(heap+1,8);
+    bool aligned1 = ((uintptr_t)block1%8==0);
 
     if(!aligned1){
         return FAILURE;
@@ -561,8 +561,8 @@ int test15() {
 
     hl_init(heap+HEAP_SIZE+7,HEAP_SIZE-7);
 
-    int* block=hl_alloc(heap+HEAP_SIZE+7,8);
-    bool aligned2 = ((uintptr_t)block%8==0);
+    int* block2=hl_alloc(heap+HEAP_SIZE+7,8);
+    bool aligned2 = ((uintptr_t)block2%8==0);
 
     if(!aligned2){
         return FAILURE;
