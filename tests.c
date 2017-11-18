@@ -381,6 +381,10 @@ int test10() {
 		original[i]=block[i];
 	}
 	i=0;
+
+    for(int j=0;j<24;j++){
+        printf("%i original %i block\n", original[j],block[j]);
+    }
 	int* newblock = hl_resize(heap,block,8);
 
 	for(i=0;i<8;i++){
@@ -454,10 +458,6 @@ int test12() {
     printf("%i %i %i %i %i\n",firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
 #endif
 	}
-
-    for(int k=0;k<8;k++){
-        firstblock[k]=k;
-    }
 
     for(int j=0;j<8;j++){
 
