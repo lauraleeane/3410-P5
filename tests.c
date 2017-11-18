@@ -553,7 +553,7 @@ int test15() {
     //&heap=&heap+1;
 
    #ifdef PRINT_DEBUG
-    printf("%lu heap pointer\n", &heap);
+    printf("%s heap pointer\n", &heap);
 #endif
 
     int* block=hl_alloc(heap,8);
