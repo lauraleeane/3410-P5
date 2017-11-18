@@ -455,11 +455,13 @@ int test12() {
     printf("%i %i %i %i %i %i\n", i,firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
 #endif
 	}
+
+
     i=0;
-    for(i=0;i<8;i++){
+    for(int j=0;j<8;j++){
 
         #ifdef PRINT_DEBUG
-    printf("%i %i %i %i %i %i\n", i,firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
+    printf("%i %i %i %i %i %i\n", j,firstblock[j],secondblock[j],thirdblock[j],fourthblock[j],fifthblock[j]);
 #endif
     }
 
