@@ -550,10 +550,10 @@ int test15() {
     char heap[HEAP_SIZE];
     hl_init(heap,HEAP_SIZE);
 
-    heap=heap+1;
+    //&heap=&heap+1;
 
    #ifdef PRINT_DEBUG
-    printf("%lu heap pointer\n", (uintptr_t)heap);
+    printf("%lu heap pointer\n", &heap);
 #endif
 
     int* block=hl_alloc(heap,8);
