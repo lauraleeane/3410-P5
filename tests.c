@@ -549,23 +549,25 @@ int test14() {
 int test15() {
 
     char heap[HEAP_SIZE];
-    hl_init(heap,HEAP_SIZE);
 
-    heap_header_t *header=(heap_header_t *)heap;
+    int i;
+    for(i=0;i<7;i++){
+    hl_init(heap+i,HEAP_SIZE);
 
-   /*#ifdef PRINT_DEBUG
-    printf("%lu heap pointer\n", (uintptr_t)&heap);
-#endif*/
+
+   #ifdef PRINT_DEBUG
+    printf("%lu heap pointer\n", (uintptr_t)heap);
+#endif
 
     int* block=hl_alloc(heap,8);
     bool aligned = ((uintptr_t)block%8==0);
 
-    if(aligned){
-        return SUCCESS;
+    if(!aligned){
+        return FAILURE;
     }
+}
 
-
-    return FAILURE;
+    return SUCCESS;
 }
 
 /* ------------------ STRESS TESTS ------------------------- */
