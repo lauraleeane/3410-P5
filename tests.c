@@ -460,6 +460,10 @@ int test12() {
 	for(i=0;i<8;i++){
 		if(firstblock[i]!=i || secondblock[i]!=i || thirdblock[i]!=i || fourthblock[i]!=i || fifthblock[i]!=i){
 			return FAILURE;
+
+            #ifdef PRINT_DEBUG
+    printf("%i \n", i);
+#endif
 		}
 	}
 
