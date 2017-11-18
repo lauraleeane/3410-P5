@@ -455,7 +455,9 @@ int test12() {
 #endif
 	}
 
-    firstblock={0,1,2,3,4,5,6,7};
+    for(int k=0;k<8;k++){
+        firstblokc[k]=k;
+    }
 
     for(int j=0;j<8;j++){
 
