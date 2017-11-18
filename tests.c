@@ -450,7 +450,7 @@ int test12() {
 		fourthblock[i]=4;
 		fifthblock[i]=rand();
         #ifdef PRINT_DEBUG
-        printf("fourthblock %i\n",fourthblock[2]);
+        printf("fifth block %i fourthblock %i\n",fifthblock[0],fourthblock[2]);
         printf("start\n %i %i %i %i %i\n",firstblock[0],secondblock[0],thirdblock[0],fourthblock[0],fifthblock[0]);
     printf("%i %i %i %i %i\n",firstblock[1],secondblock[1],thirdblock[1],fourthblock[1],fifthblock[1]);
     printf("%i %i %i %i %i\n",firstblock[2],secondblock[2],thirdblock[2],fourthblock[2],fifthblock[2]);
