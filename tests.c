@@ -453,7 +453,7 @@ int test12() {
     printf("%i %i %i %i %i\n",firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
 #endif
 	}
-
+printf("%p %p %p %p %p\n",firstblock,secondblock,thirdblock,fourthblock,fifthblock);
     for(int j=0;j<8;j++){
 
         #ifdef PRINT_DEBUG
