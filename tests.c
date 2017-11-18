@@ -498,7 +498,7 @@ int test13() {
 
 	hl_release(heap, secondblock);
 
-	int* newblock=hl_alloc(heap,16);
+	int* newblock=hl_alloc(heap,5);
 
 	if(newblock==NULL){
 		return FAILURE;
