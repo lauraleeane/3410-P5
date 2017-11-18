@@ -444,12 +444,13 @@ int test12() {
 	int* fourthblock=hl_alloc(heap,8);
 	int* fifthblock=hl_alloc(heap,8);
 	for(int i=0;i<8;i=i+1){
-		*firstblock[i]=1;
-		*secondblock[i]=2;
-		*thirdblock[i]=3;
-		*fourthblock[i]=4;
-		*fifthblock[i]=5;
+		firstblock[i]=1;
+		secondblock[i]=2;
+		thirdblock[i]=3;
+		fourthblock[i]=4;
+		fifthblock[i]=rand();
         #ifdef PRINT_DEBUG
+        printf("fourthblock %i\n",fourthblock[2]);
         printf("start\n %i %i %i %i %i\n",firstblock[0],secondblock[0],thirdblock[0],fourthblock[0],fifthblock[0]);
     printf("%i %i %i %i %i\n",firstblock[1],secondblock[1],thirdblock[1],fourthblock[1],fifthblock[1]);
     printf("%i %i %i %i %i\n",firstblock[2],secondblock[2],thirdblock[2],fourthblock[2],fifthblock[2]);
