@@ -376,9 +376,13 @@ int test10() {
 	int* block=hl_alloc(heap,24);
 	//int original[24];
 	for(int i=0;i<24;i++){
-		block[i]=rand() % 100 +1;
+		block[i]=i;
 		//original[i]=block[i];
 	}
+
+    for(int j=0;j<24;j++){
+        printf("%i\n",block[j]);
+    }
 	int* newblock = hl_resize(heap,block,8);
 
 	for(int i=0;i<8;i++){
