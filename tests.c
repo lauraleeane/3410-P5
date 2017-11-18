@@ -455,7 +455,7 @@ int test12() {
     printf("%i %i %i %i %i\n", firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
 #endif
 	}
-
+    i=0;
     for(i=0;i<8;i++){
 
         #ifdef PRINT_DEBUG
