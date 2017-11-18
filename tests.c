@@ -551,7 +551,7 @@ int test15() {
     hl_init(heap,HEAP_SIZE);
 
    #ifdef PRINT_DEBUG
-    printf("%d heap pointer\n", (uintptr_t)heap);
+    printf("%lu heap pointer\n", (uintptr_t)heap);
 #endif
 
     int* block=hl_alloc(heap,8);
