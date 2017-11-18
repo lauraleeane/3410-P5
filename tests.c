@@ -458,7 +458,7 @@ int test12() {
 
 	i=0;
 	for(i=0;i<8;i++){
-		if(firstblock[i]!=i || secondblock[i]!=i || thirdblock[i]!=i || fourthblock[i]!=i || fifthblock[i]=i){
+		if(firstblock[i]!=i || secondblock[i]!=i || thirdblock[i]!=i || fourthblock[i]!=i || fifthblock[i]!=i){
 			return FAILURE;
 		}
 	}
@@ -478,7 +478,7 @@ int test12() {
  */
 int test13() {
 
-	char heap(HEAP_SIZE);
+	char heap[HEAP_SIZE];
 	hl_init(heap,HEAP_SIZE);
 
 	int* firstblock=hl_alloc(heap,8);
