@@ -27,7 +27,7 @@ const char* test_descriptions[] = {
     /* 12 */ "if the block if null, release should act like a nop",
     /* 13 */ "after a release, an allocate should be able to successfuly occur",
     /* 14 */ "if there are already five blocks, alloc should not be able to allocate a new block",
-    /* 15 */ "your description here",
+    /* 15 */ "checks that allocate remains 8-byte alligned when heap is not",
     /* STRESS tests */
     /* 16 */ "alloc & free, stay within heap limits",
     /* 17 */ "your description here",
