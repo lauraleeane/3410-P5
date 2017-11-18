@@ -444,25 +444,17 @@ int test12() {
 	int* thirdblock=hl_alloc(heap,8);
 	int* fourthblock=hl_alloc(heap,8);
 	int* fifthblock=hl_alloc(heap,8);
-	int i;
-	for(i=0;i<8;i++){
-		firstblock[i]=i;
-		secondblock[i]=i;
-		thirdblock[i]=i;
-		fourthblock[i]=i;
-		fifthblock[i]=i;
+	for(int i=0;i<8;i++){
+		firstblock[i]=1;
+		secondblock[i]=2;
+		thirdblock[i]=3;
+		fourthblock[i]=4;
+		fifthblock[i]=5;
         #ifdef PRINT_DEBUG
     printf("%i %i %i %i %i %i\n", i,firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
 #endif
 	}
 
-    firstblock[3]=3;
-    secondblock[3]=3;
-    thirdblock[3]=3;
-    fourthblock[3]=3;
-    fifthblock[3]=3;
-
-    i=0;
     for(int j=0;j<8;j++){
 
         #ifdef PRINT_DEBUG
@@ -472,7 +464,7 @@ int test12() {
 
 	hl_release(heap,NULL);
 
-    for(i=0;i<8;i++){
+    for(int i=0;i<8;i++){
 
         #ifdef PRINT_DEBUG
     printf("%i %i %i %i %i %i\n", i,firstblock[i],secondblock[i],thirdblock[i],fourthblock[i],fifthblock[i]);
@@ -481,7 +473,7 @@ int test12() {
 
 	i=0;
 	for(i=0;i<8;i++){
-		if(firstblock[i]!=i || secondblock[i]!=i || thirdblock[i]!=i || fourthblock[i]!=i || fifthblock[i]!=i){
+		if(firstblock[i]!=1 || secondblock[i]!=2 || thirdblock[i]!=3 || fourthblock[i]!=4 || fifthblock[i]!=5){
 
             return FAILURE;
 		}
